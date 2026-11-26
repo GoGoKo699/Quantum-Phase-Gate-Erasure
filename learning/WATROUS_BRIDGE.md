@@ -26,7 +26,7 @@ If an accepted Choi operator is a positive sum with rank one, each nonzero summa
 
 ## From charge to a programmable phase
 
-One use of $`U_\phi=\operatorname{diag}(1,e^{i\phi})`$ on an occupied probe contributes a factor $`e^{i\phi}`$. An $`N`$-probe program therefore has phase factor $`e^{im\phi}`$ in each orthogonal component of total Hamming weight $`m`$. Let $`w_m`$ denote the squared norm of that component. Keeping their coherent superposition matters because replacing it with the probability vector would remove the phase.
+One use of $`U_\phi=\mathrm{diag}(1,e^{i\phi})`$ on an occupied probe contributes a factor $`e^{i\phi}`$. An $`N`$-probe program therefore has phase factor $`e^{im\phi}`$ in each orthogonal component of total Hamming weight $`m`$. Let $`w_m`$ denote the squared norm of that component. Keeping their coherent superposition matters because replacing it with the probability vector would remove the phase.
 
 The late data require factor $`e^{i\ell\phi}`$ on their charge-$`\ell`$ subspace, for each $`\ell`$ from $`0`$ to $`k`$. Fix a retrieval label $`j`$. On data of charge $`\ell`$, take the program component with charge $`j+\ell`$. Its phase factors as
 

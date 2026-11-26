@@ -64,11 +64,11 @@ With the supplied phase program, the induced data operator on outcome $`j`$ is $
 Write $`T_kw`$ for the same charge distribution shifted up by $`k`$. The pure program formula implies
 
 ```math
-1-s_k(w)\ge \operatorname{TV}(w,T_kw)
+1-s_k(w)\ge \mathrm{TV}(w,T_kw)
 \ge \max_{j\in\mathbb Z}\sum_{r=j}^{j+k-1} w_r .
 ```
 
-The first inequality uses the minimum of the endpoint weights in place of the minimum over a full window, together with $`\operatorname{TV}(p,q)=1-\sum_j\min\{p_j,q_j\}`$. The second compares the two distributions on a half-line. The difference of their masses on a half-line is exactly the mass of one $`k`$-site window. For a symmetric unimodal profile both inequalities are equalities. Every window has its smallest weight at an endpoint. The difference of the shifted profiles changes sign at most once, because the larger weight is the one closer to the common profile's original center. A half-line then realizes the total-variation distance.
+The first inequality uses the minimum of the endpoint weights in place of the minimum over a full window, together with $`\mathrm{TV}(p,q)=1-\sum_j\min\{p_j,q_j\}`$. The second compares the two distributions on a half-line. The difference of their masses on a half-line is exactly the mass of one $`k`$-site window. For a symmetric unimodal profile both inequalities are equalities. Every window has its smallest weight at an endpoint. The difference of the shifted profiles changes sign at most once, because the larger weight is the one closer to the common profile's original center. A half-line then realizes the total-variation distance.
 
 If the charge distribution has standard deviation $`\sigma`$, Chebyshev's inequality puts at least $`3/4`$ of its mass in an interval of radius $`2\sigma`$ around the mean. The same statement holds for $`\sigma=0`$ because the distribution is then a point mass. This interval contains at most $`4\sigma+1`$ integers, which can be covered by at most $`1+(4\sigma+1)/k`$ windows of length $`k`$. Therefore
 
@@ -83,7 +83,7 @@ It suffices to decompose the probe preparation into pure states with phase-indep
 Let $`X`$ have the computational-basis probability law of the pure probe, and let $`M`$ be its total weight. Sample $`S`$ uniformly from size-$`t`$ subsets, independently of $`X`$. The conditional survivor charge variance is
 
 ```math
-\sigma(S,X_S)^2=\operatorname{Var}(M\mid S,X_S).
+\sigma(S,X_S)^2=\mathrm{Var}(M\mid S,X_S).
 ```
 
 For $`1\le t\le N`$ and $`N\ge2`$, estimate $`M`$ by multiplying the weight of $`X_S`$ by $`N/t`$. At fixed full string of weight $`M`$, the count in the sample is hypergeometric. The estimate is unbiased on this sampling and has mean squared error $`M(N-M)(N-t)/(t(N-1))`$. Conditional expectation minimizes mean squared error, yielding
