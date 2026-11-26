@@ -1,0 +1,14 @@
+# Quantum Phase Gate Erasure
+
+> Exact heralded use of a stored unknown qubit phase gate on data supplied after flagged probe loss.
+
+- [Overview](README.md): question, failure law and ten-query example.
+- [Model](science/model.md): one parallel call per physical probe, erasure before compression, delayed arbitrary reference-entangled data, and exact success-versus-failure contract.
+- [Proof](science/proof.md): pure charge-window retrieval, uniform planned block preparation, random-subset sampling converse, and finite separation from product probes.
+- [Circuit](science/implementation.md): known-gate construction and explicit resource accounting.
+- [Related work](references/RELATED_WORK.md): inherited lossless phase storage, comparisons with noisy gate reuse, gate replication and covariant erasure.
+- [Worked example](learning/WORKED_EXAMPLE.md): run through one loss and two output gates.
+- [Watrous bridge](learning/WATROUS_BRIDGE.md) and [30 milestones](learning/MILESTONES.md): connect background and proof.
+- [Verification](verification/README.md): reproduce finite checks.
+
+The exact guarantee concerns the full accepted channel. The failure order alone does not determine the success curve for large batches. Query counts include discarded probes. Known gate and workspace costs are accounted for separately.
