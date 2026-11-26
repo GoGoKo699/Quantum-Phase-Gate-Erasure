@@ -30,9 +30,9 @@ One use of $`U_\phi=\mathrm{diag}(1,e^{i\phi})`$ on an occupied probe contribute
 
 The late data require factor $`e^{i\ell\phi}`$ on their charge-$`\ell`$ subspace, for each $`\ell`$ from $`0`$ to $`k`$. Fix a retrieval label $`j`$. On data of charge $`\ell`$, take the program component with charge $`j+\ell`$. Its phase factors as
 
-"```math"
+```math
 e^{i(j+\ell)\phi}=e^{ij\phi}e^{i\ell\phi}.
-"```"
+```
 
 When the filter balances the amplitudes across all data charges, the first factor is global on the accepted branch. Measuring $`j`$ then preserves the relative phases between data charges. Each $`j`$ spends at most the smallest population among the required consecutive program charges. The matching retrieval uses that amount, and the Fourier converse shows that any exact retriever has the same limit on a pure program. See the [worked example](WORKED_EXAMPLE.md) for an explicit four-label instrument.
 

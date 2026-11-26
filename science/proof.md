@@ -130,7 +130,7 @@ Set $`q=L+1`$. For $`R\ge1`$ the peak charge mass is at most $`C_0/(q\sqrt R)`$ 
 
 Fourier inversion bounds each charge mass by the integral of $`|\Phi(u)|^R`$ on $`[-\pi,\pi]`$ divided by $`2\pi`$. For $`0\le u\le\pi/q`$, apply $`1-\cos x\ge2x^2/\pi^2`$ to $`u(Y-Y')`$ for independent uniform variables $`Y,Y'`$. Their difference has mean square $`(q^2-1)/6`$, giving $`1-|\Phi(u)|^2\ge(q^2-1)u^2/(3\pi^2)`$. The integral on this region is bounded by a Gaussian integral of order $`1/(q\sqrt R)`$. For $`\pi/q\le u\le\pi`$ use $`|\Phi(u)|\le \pi/(qu)`$. For $`R\ge2`$ the tail integral is at most $`\pi/[q(R-1)]`$. It follows that failure is at most $`\min\{1,C_0 k/(q\sqrt R)\}`$.
 
-For $`t<N/4`$ and $`N\ge2`$ choose
+For $`t\lt N/4`$ and $`N\ge2`$ choose
 
 ```math
 L=\min\!\left\{d,\left\lfloor\frac{N}{2(t+1)}\right\rfloor\right\},
@@ -174,7 +174,7 @@ For each erased set and lost-bit component, center the survivor charge at $`NZ/t
 
 ```math
 1-f^*_{N,t,k}\le \min\!\left\{1,\;2e^{-tk^2/(4N(N-t))}\right\}
-\qquad (1\le t<N).
+\qquad (1\le t\lt N).
 ```
 
-For depth $`d`$, choose the conditional mean as the center. The conditional block charges are independent and the sum of their squared interval widths is at most $`d(N-t)`$. The independent-variable version yields the additional upper bound $`2e^{-k^2/[2d(N-t)]}`$ for $`t<N`$. For $`k>N-t`$ the exact success guarantee is zero. These bounds need not give the optimal exponent or limiting success profile. [Hoeffding, Theorems 2 and 4](https://doi.org/10.1080/01621459.1963.10500830)
+For depth $`d`$, choose the conditional mean as the center. The conditional block charges are independent and the sum of their squared interval widths is at most $`d(N-t)`$. The independent-variable version yields the additional upper bound $`2e^{-k^2/[2d(N-t)]}`$ for $`t\lt N`$. For $`k>N-t`$ the exact success guarantee is zero. These bounds need not give the optimal exponent or limiting success profile. [Hoeffding, Theorems 2 and 4](https://doi.org/10.1080/01621459.1963.10500830)
