@@ -22,7 +22,7 @@ Expand the erased port in its computational basis before taking the partial trac
 An exact classical receiver must distinguish the supports of these positive operators. For distinct marks $`m,n`$, their Hilbert–Schmidt overlap is
 
 ```math
-\operatorname{Tr}\bigl(\rho_m^{(i)}\rho_n^{(i)}\bigr)
+\mathrm{Tr}\bigl(\rho_m^{(i)}\rho_n^{(i)}\bigr)
 =\sum_{a,b}\bigl|\langle\psi_{m,a}^{(i)}\mid\psi_{n,b}^{(i)}\rangle\bigr|^2.
 ```
 
