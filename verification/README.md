@@ -16,3 +16,5 @@ The checks use integers, rational probabilities, and symbolic powers of the unkn
 - Two-site erasures across a small block layout and selected product profiles for the Fourier bound.
 
 See the [proof](../science/proof.md) for the arbitrary-probe converse, the uniform asymptotic bounds, and the Fourier inequality behind the product ceiling.
+
+The [marked-set verifier](https://github.com/GoGoKo699/Quantum-Parallel-Marked-Set/blob/main/verification/check_flagged_erasure.py) checks the qutrit construction and finite converses for the sister task. See [flagged marked-address search](../science/flagged-search.md) for how its exact checks differ from the charge-profile checks above.

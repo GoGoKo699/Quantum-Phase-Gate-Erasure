@@ -9,5 +9,6 @@ An intact probe program carries the unknown gate in the relative phase between i
 | Compare a block design with all encodings | [Achievability, sampling converse and finite separation](proof.md) |
 | Compile the receiver with known gates | [Circuit and resources](implementation.md) |
 | Relate exact storage to estimation, replication and recovery | [Related work](../references/RELATED_WORK.md) |
+| Compare exact retrieval with identification after loss | [Flagged marked-address search](flagged-search.md) |
 
 The same analytical bounds cover sparse, extensive and nearly complete loss. Exact success is possible when at least as many probes survive as there are output gates; success can still be small in that regime. The [ten-query example](../learning/WORKED_EXAMPLE.md) shows the receiver label and the cancellation of its global phase. The [verification route](../verification/README.md) checks finite algebra and numerical examples.
