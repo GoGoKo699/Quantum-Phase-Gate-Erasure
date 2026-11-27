@@ -35,6 +35,10 @@ The bound on failure alone does not resolve how fast success vanishes near the m
 
 The [science index](science/README.md) connects the results and their limits.
 
+## Sister project
+
+[Quantum Parallel Marked Set](https://github.com/GoGoKo699/Quantum-Parallel-Marked-Set/blob/main/science/flagged-erasure.md) applies the same flagged-loss reduction to exact identification of a marked address. With five addresses and three parallel calls, a protected qutrit enables exact identification after one arbitrary port erasure and is optimal for coherent recovery of the queried-state span. Whether a qubit suffices for classical identification remains open. [Compare the two tasks](science/flagged-search.md).
+
 ## Learn the result
 
 The educational anchor is John Watrous, *The Theory of Quantum Information* (2018). Start with the [Watrous bridge](learning/WATROUS_BRIDGE.md), follow the [ten-query worked example](learning/WORKED_EXAMPLE.md), or use the [30-milestone map](learning/MILESTONES.md).

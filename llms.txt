@@ -10,5 +10,6 @@
 - [Worked example](learning/WORKED_EXAMPLE.md): run through one loss and two output gates.
 - [Watrous bridge](learning/WATROUS_BRIDGE.md) and [30 milestones](learning/MILESTONES.md): connect background and proof.
 - [Verification](verification/README.md): reproduce finite checks.
+- Use [flagged marked-address search](science/flagged-search.md) to compare the hidden loss expansion with perfect support discrimination and coherent recovery using a protected qutrit.
 
 The exact guarantee concerns the full accepted channel. The failure order alone does not determine the success curve for large batches. Query counts include discarded probes. Known gate and workspace costs are accounted for separately.

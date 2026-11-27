@@ -1,6 +1,6 @@
 # Project understanding map
 
-These 30 milestones explain how to retain an unknown phase gate across flagged probe losses and apply it exactly to data that arrive later. The [Watrous bridge](WATROUS_BRIDGE.md) identifies the textbook sections and connects them to the project's methods. The [worked example](WORKED_EXAMPLE.md) follows a complete ten-probe experiment and the [science index](../science/README.md) links the exact statements and proofs.
+These 30 milestones explain how to retain an unknown phase gate across flagged probe losses and apply it exactly to data that arrive later. The [Watrous bridge](WATROUS_BRIDGE.md) identifies the textbook sections and connects them to the project's methods. The [worked example](WORKED_EXAMPLE.md) follows a complete ten-probe experiment. The [science index](../science/README.md) links the proofs, and [flagged marked-address search](../science/flagged-search.md) compares a different receiver built on the same partial trace.
 
 The **11 background/preliminaries milestones** assemble the phase orbit, the loss model, the heralded operation and the necessary probability tools. The **19 narrative/innovation milestones** start with the exact pure-program filter. They build the loss lower bound and the construction before bringing the finite advantage and implementation into the same account.
 
@@ -218,7 +218,7 @@ The **11 background/preliminaries milestones** assemble the phase orbit, the los
 
 **Dependencies.** [M04](#m04-flagged-loss-and-reduction), [M07](#m07-rank-one-in-the-choi-representation), [M12](#m12-the-charge-resolved-pure-program), [M14](#m14-the-overlap-bound).
 
-**Conceptual connection.** The proof can analyze conditional charge distributions even when the actual receiver cannot see which component represents the lost bits.
+**Conceptual connection.** The proof can analyze conditional charge distributions even when the actual receiver cannot see which component represents the lost bits. The same expansion gives hidden-address components for finite marked-set discrimination, where supports for different marks must be orthogonal.
 
 **Source pointers.** [Scientific proof](../science/proof.md).
 
@@ -358,13 +358,13 @@ The **11 background/preliminaries milestones** assemble the phase orbit, the los
 
 **Central question.** Which claims concern queries, circuits or other phase tasks?
 
-**Understanding target.** Separate the query budget from preparation, decoder rotations, and workspace. Compare delayed exact application with lossless programming, approximate replication, phase estimation and pre-encoded data recovery.
+**Understanding target.** Separate the query budget from preparation, decoder rotations, and workspace. Compare delayed exact application with lossless programming, approximate replication, phase estimation and pre-encoded data recovery. In the sister task, distinguish the protected qutrit from the queried ports and compare classical identification with coherent recovery.
 
 **Dependencies.** [M11](#m11-the-complete-experimental-timeline), [M16](#m16-the-exact-lossless-optimum), [M21](#m21-from-average-to-worst-pattern), [M26](#m26-dense-erasures-and-exact-feasibility), [M28](#m28-choose-the-block-size).
 
 **Conceptual connection.** The distinctions identify what the optimal scaling certifies and which assumptions allow its use in a device model.
 
-**Source pointers.** [Implementation](../science/implementation.md) · [Related work](../references/RELATED_WORK.md).
+**Source pointers.** [Implementation](../science/implementation.md) · [Related work](../references/RELATED_WORK.md) · [Flagged marked-address search](../science/flagged-search.md).
 
 ### M30 The complete loss and batch law
 
