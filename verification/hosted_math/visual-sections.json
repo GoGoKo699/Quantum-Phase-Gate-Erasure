@@ -1,0 +1,16 @@
+{
+  "README.md": [
+    "Run the storage and retrieval circuit"
+  ],
+  "science/implementation.md": [
+    "Prepare and select the blocks",
+    "Compress the block charges",
+    "Apply and herald the gate"
+  ],
+  "science/flagged-search.md": [
+    "The same reduction gives different tests"
+  ],
+  "learning/WORKED_EXAMPLE.md": [
+    "Retrieve the gate"
+  ]
+}
