@@ -23,6 +23,14 @@ The bound on failure alone does not resolve how fast success vanishes near the m
 | Same budgets with product probes | Every product-probe strategy has $`p\le 84883/131072\approx64.76\%`$ in the worst case, even with joint decoding. |
 | General budgets | The intact-block decoder attains the optimal worst-case failure order. |
 
+## Run the storage and retrieval circuit
+
+1. **Prepare and query the probes before the data arrive.** Choose a block length using the [layout for the query and loss budgets](science/proof.md#construction-that-attains-the-order). In each block, use the [known rotation sequence](science/implementation.md#prepare-and-select-the-blocks) to make an equal superposition of strings with a run of ones followed by zeros, one string per possible weight. Put any leftover probes in zero and apply the supplied unknown phase gate once to every probe in one parallel layer.
+2. **Keep the intact blocks.** After the position flags arrive, discard each block touched by loss. Reversibly convert each intact block to its binary weight label. Compute the total program charge, then erase the individual labels coherently using the inverse of the known preparation for tuples of that charge. The [tuple-count table](science/implementation.md#compress-the-block-charges) supplies the rotation parameters.
+3. **Apply the gate to the delayed data and herald success.** Compute the data batch's Hamming weight coherently, subtract it from the program charge, and apply the [specified flag rotation](science/implementation.md#apply-and-herald-the-gate) for the resulting shift. Uncompute the weight and measure the flag and shifted charge. On flag one, return the entire data batch with the phase gate applied exactly, including when the input shares entanglement with a reference. Flag zero means failure. This block layout always rejects if the batch exceeds the total number of probes in intact blocks.
+
+Count all initial phase calls, including padding and probes later discarded. The circuit uses no protected stored register or later phase calls. The [resource account](science/implementation.md#apply-and-herald-the-gate) gives the exact success probability and the known gate and workspace costs. A finite gate set may change the accepted operation through rotation approximation.
+
 ## Read the science
 
 | Question | Start here |
